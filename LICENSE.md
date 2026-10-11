@@ -1,10 +1,15 @@
+<!-- generado por aplicar-marca -->
 # Licencia
 
-© Vecipp. Todos los derechos reservados.
+**Vecipp IA** — parte del ecosistema **Vecipp**.
 
-Vecipp IA (la CLI, la aplicación de escritorio y el servicio ia.vecipp.com) es software propietario. Este repositorio
-publica sus instaladores, sus novedades y su documentación para que cualquiera pueda instalarlo y usarlo con una cuenta
-Vecipp; no contiene ni concede derechos sobre su código fuente.
+Copyright © 2026 Yilmer Carrillo Diaz y Yeferson Carrillo Diaz. Todos los derechos reservados.
 
-Puedes instalar y usar Vecipp IA según los términos de servicio de Vecipp. No está permitido descompilar, redistribuir
-ni revender los instaladores o el servicio sin autorización escrita de Vecipp.
+Este software, su código fuente, su diseño, su documentación, sus marcas y logotipos («Vecipp» y su símbolo) son
+propiedad exclusiva de sus creadores. Este repositorio publica la presentación, la documentación y, cuando aplica, los instaladores del producto; no contiene ni concede derechos sobre su código fuente.
+
+Queda prohibido, sin autorización previa y por escrito de sus creadores: copiar, modificar, distribuir, sublicenciar,
+vender, descompilar, hacer ingeniería inversa o crear obras derivadas de este software o de cualquier parte de él.
+
+El uso de los productos de Vecipp por parte de sus usuarios se rige por los términos de servicio publicados en
+vecipp.com. EL SOFTWARE SE ENTREGA «TAL CUAL», SIN GARANTÍAS DE NINGÚN TIPO, EN LA MEDIDA EN QUE LA LEY LO PERMITA.

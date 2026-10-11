@@ -1,23 +1,32 @@
+<!-- vecipp:cabecera — generado por aplicar-marca: no editar a mano, se regenera -->
 <p align="center">
-  <img src="assets/banner.svg" alt="Vecipp IA — tu agente de programación en la terminal, el escritorio y la web" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/banner-oscuro.svg">
+    <img src=".github/assets/banner-claro.svg" alt="Vecipp IA — Tu agente de programación en la terminal, el escritorio y la web" width="100%">
+  </picture>
 </p>
 
 <p align="center">
-  <a href="https://github.com/DangerDutyJS/Vecipp-IA-Releases/releases/latest"><img alt="Versión" src="https://img.shields.io/github/v/release/DangerDutyJS/Vecipp-IA-Releases?label=versi%C3%B3n&color=6d5dfc"></a>
-  <img alt="Windows · macOS · Linux" src="https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-soportado-2ea44f">
-  <img alt="Node 20+" src="https://img.shields.io/badge/Node.js-20%2B-339933">
-  <a href="https://ia.vecipp.com"><img alt="ia.vecipp.com" src="https://img.shields.io/badge/web-ia.vecipp.com-6d5dfc"></a>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square">
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white&style=flat-square">
+  <img alt="React" src="https://img.shields.io/badge/React-149ECA?logo=react&logoColor=white&style=flat-square">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=flat-square">
+  <img alt="Electron" src="https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=white&style=flat-square">
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=flat-square">
+  <img alt="Ecosistema Vecipp" src="https://img.shields.io/badge/Ecosistema_Vecipp-IA-1FC259?style=flat-square">
+  <img alt="Licencia propietaria" src="https://img.shields.io/badge/licencia-propietaria-334155?style=flat-square">
+  <img alt="Hecho en Colombia" src="https://img.shields.io/badge/hecho_en-Colombia_🇨🇴-FCD116?style=flat-square">
 </p>
 
 <p align="center">
-  <a href="https://ia.vecipp.com"><b>Sitio</b></a> ·
-  <a href="https://ia.vecipp.com/descargas"><b>Descargas</b></a> ·
-  <a href="https://ia.vecipp.com/docs"><b>Documentación</b></a> ·
-  <a href="https://ia.vecipp.com/precios"><b>Planes</b></a> ·
-  <a href="CHANGELOG.md"><b>Novedades</b></a>
+  <a href="https://vecipp.com"><b>vecipp.com</b></a> ·
+  <a href="https://github.com/DangerDutyJS/Vecipp-Negocio"><b>Vecipp Negocio</b></a> ·
+  <a href="https://github.com/DangerDutyJS/Vecipp-Barrio"><b>Vecipp Barrio</b></a> ·
+  <a href="https://github.com/DangerDutyJS/Vecipp-IA-Releases"><b>Vecipp IA</b></a>
 </p>
+<!-- /vecipp:cabecera -->
 
----
+## Qué es
 
 **Vecipp IA** es un agente de programación con IA. Lee y edita tu código, corre comandos, se conecta por SSH a tus
 servidores, usa el navegador y entrega documentos, páginas y diseños listos para ver. Una sola cuenta Vecipp para los
@@ -85,7 +94,7 @@ Opciones al abrir: `vecipp -C <carpeta>`, `vecipp --no-vps`, `vecipp --version`.
 - **Trabajar en tu código**: leer, buscar, editar y crear archivos; mostrarte cada cambio antes de aplicarlo.
 - **Correr cosas de verdad**: comandos, varias shells a la vez, procesos en segundo plano, pruebas y compilaciones.
 - **Tus servidores**: conectarse por SSH a tu VPS y trabajar ahí con las mismas herramientas.
-- **Artefactos como en Claude**: los documentos, páginas y diseños que crea se guardan en tu cuenta y se abren solos en
+- **Artefactos al instante**: los documentos, páginas y diseños que crea se guardan en tu cuenta y se abren solos en
   el navegador, ya renderizados.
 - **Tu historial en todas partes**: tus sesiones de la terminal y el escritorio se ven en la web.
 - **Un solo uso para todo**: la sesión de 5 horas y la semana son las mismas en la web, la CLI y el escritorio.
@@ -108,7 +117,28 @@ paso. Los artefactos y las sesiones sincronizadas se guardan en tu cuenta, y pue
 - **Documentación**: [ia.vecipp.com/docs](https://ia.vecipp.com/docs).
 - **Soporte**: [soporte.vecipp.com](https://soporte.vecipp.com).
 
+<!-- vecipp:pie — generado por aplicar-marca: no editar a mano, se regenera -->
 ---
 
-<sub>© Vecipp. Software propietario: este repositorio publica los instaladores, las novedades y la documentación de
-Vecipp IA, no su código fuente. Ver [LICENSE.md](LICENSE.md).</sub>
+## 🌎 Sobre Vecipp
+
+**Vecipp** es un ecosistema tecnológico latinoamericano que reúne en una sola cuenta la gestión de los negocios, la vida
+del barrio y la inteligencia artificial. Nació en un pueblo de Colombia con un sueño más grande que el lugar donde
+empezó: demostrar que desde Latinoamérica se crea tecnología de clase mundial, y llegar a millones de personas
+haciéndoles la vida más fácil. [Nuestra historia, misión y visión](https://github.com/DangerDutyJS/Vecipp-Negocio#nuestra-historia).
+
+| Documento | Para qué |
+|---|---|
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Cómo se trabaja en este repositorio |
+| [`SECURITY.md`](SECURITY.md) | Cómo reportar una vulnerabilidad |
+| [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Código de conducta |
+| [`LICENSE.md`](LICENSE.md) | Licencia |
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/logo-vecipp-blanco.svg">
+    <img src=".github/assets/logo-vecipp.svg" alt="Vecipp" height="44">
+  </picture><br>
+  <sub>Diseñado y desarrollado por los ingenieros de software <b>Yilmer Carrillo Diaz</b> y <b>Yeferson Carrillo Diaz</b> · © 2026 · Hecho en Colombia 🇨🇴 para Latinoamérica y el mundo</sub>
+</p>
+<!-- /vecipp:pie -->

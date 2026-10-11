@@ -1,0 +1,14 @@
+name: Proponer una mejora
+description: Una idea para que Vecipp sea mejor
+labels: ["mejora"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: ¿Qué propones?
+    validations:
+      required: true
+  - type: textarea
+    id: para
+    attributes:
+      label: ¿Qué problema resuelve o a quién ayuda?

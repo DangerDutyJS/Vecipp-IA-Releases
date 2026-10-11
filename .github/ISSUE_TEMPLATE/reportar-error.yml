@@ -1,0 +1,20 @@
+name: Reportar un error
+description: Algo no funciona como debería
+labels: ["error"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: ¿Qué pasó?
+      description: Describe el error y qué esperabas que pasara.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: "1. Entré a…\n2. Hice clic en…\n3. Apareció…"
+  - type: input
+    id: donde
+    attributes:
+      label: ¿Dónde? (aplicación, sistema, navegador, versión)

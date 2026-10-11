@@ -9,7 +9,7 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 - `vecipp --help` muestra dónde ver las novedades y bajar los instaladores: el repo público [Vecipp-IA-Releases](https://github.com/DangerDutyJS/Vecipp-IA-Releases).
 
 ### CLI 1.0.1 — 2026-10-11
-- **Artefactos como en Claude**: cuando el agente crea un documento, una página o un diseño, se sube a tu cuenta y se abre solo en tu navegador, ya renderizado, en `ia.vecipp.com/artifacts`.
+- **Artefactos al instante**: cuando el agente crea un documento, una página o un diseño, se sube a tu cuenta y se abre solo en tu navegador, ya renderizado, en `ia.vecipp.com/artifacts`.
 - `/artifacts` muestra el enlace de cada uno; `/artifacts open off` apaga la apertura automática.
 - Artefactos más profesionales: el agente sigue una guía de diseño (paleta, tipografía, modo oscuro, responsive, contenido real).
 
@@ -26,7 +26,7 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 - **Ajustes › Acerca de Vecipp IA**: enlaces a las novedades y versiones en GitHub y a ia.vecipp.com/descargas.
 
 ### Escritorio 1.0.1 — 2026-10-11
-- **Artefactos como en Claude**: lo que el agente crea (documentos, páginas, diseños) se guarda en tu cuenta y se abre solo en tu navegador, en `ia.vecipp.com/artifacts`.
+- **Artefactos al instante**: lo que el agente crea (documentos, páginas, diseños) se guarda en tu cuenta y se abre solo en tu navegador, en `ia.vecipp.com/artifacts`.
 - Artefactos más profesionales: el agente sigue una guía de diseño (paleta, tipografía, modo oscuro, responsive, contenido real).
 
 ### Escritorio 1.0.0 — 2026-10-11
