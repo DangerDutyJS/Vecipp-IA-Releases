@@ -5,6 +5,13 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.6 — 2026-10-12
+- **La línea de trabajo dice la verdad**: qué está haciendo de verdad (`Reading app.js`, `Running npm test`, `Thinking`, `Calling Chrome · clicking…`, `Waiting for kimi-k3`), el tiempo y los tokens reales. Se pone **amarilla** si el modelo deja de responder unos segundos y **roja** si se trabó.
+- **`/effort low | medium | high`**: cuánto razonan los modelos que piensan antes de responder (se ve en la barra y en la línea de trabajo).
+- **`/cost` y `/stats`**: los tokens de esta conversación y el consumo de este PC (hoy, 7 y 30 días, por modelo), con los créditos que cobra el proveedor. Todo queda en tu PC (`~/.vecipp/usage.jsonl`).
+- El agente **cuenta lo que va haciendo** en una frase antes de cada grupo de acciones, en vez de trabajar callado.
+- Aprobación compacta en una línea (`Yes · Always · No`, con ← →, y / a / n). La interfaz queda toda en inglés; la IA te sigue hablando en tu idioma.
+
 ### CLI 1.0.5 — 2026-10-12
 - **Interfaz más limpia**: el banner queda arriba y el prompt abajo, con el espacio libre en medio; tus mensajes quedan como una sola línea `└─$ …` (el encabezado `┌──(vecipp㉿…)` ya no se repite); menos colores: verde para los marcos, blanco para el texto y gris para lo demás.
 - **Más transparencia**: arranca con un 25 %. Si ya la cambiaste con `/appearance`, se respeta tu elección.
