@@ -15,14 +15,14 @@
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=flat-square">
   <img alt="Ecosistema Vecipp" src="https://img.shields.io/badge/Ecosistema_Vecipp-IA-1FC259?style=flat-square">
   <img alt="Licencia propietaria" src="https://img.shields.io/badge/licencia-propietaria-334155?style=flat-square">
-  <img alt="Hecho en Colombia" src="https://img.shields.io/badge/hecho_en-Colombia_🇨🇴-FCD116?style=flat-square">
+  <img alt="Hecho en Colombia" src="https://img.shields.io/badge/hecho_en-Colombia-FCD116?style=flat-square">
 </p>
 
 <p align="center">
   <a href="https://vecipp.com"><b>vecipp.com</b></a> ·
-  <a href="https://github.com/DangerDutyJS/Vecipp-Negocio"><b>Vecipp Negocio</b></a> ·
-  <a href="https://github.com/DangerDutyJS/Vecipp-Barrio"><b>Vecipp Barrio</b></a> ·
-  <a href="https://github.com/DangerDutyJS/Vecipp-IA-Releases"><b>Vecipp IA</b></a>
+  <a href="https://github.com/Vecipp/Vecipp-Negocio"><b>Vecipp Negocio</b></a> ·
+  <a href="https://github.com/Vecipp/Vecipp-Barrio"><b>Vecipp Barrio</b></a> ·
+  <a href="https://github.com/Vecipp/Vecipp-IA-Releases"><b>Vecipp IA</b></a>
 </p>
 <!-- /vecipp:cabecera -->
 
@@ -58,7 +58,7 @@ No piden permisos de administrador ni `sudo`: si no tienes Node.js 20+, instalan
 la firma SHA-256 de todo lo que descargan. Para actualizar, la misma línea.
 
 **Escritorio para Windows**: [descargar el instalador](https://ia.vecipp.com/descargas) (también en
-[Releases](https://github.com/DangerDutyJS/Vecipp-IA-Releases/releases/latest)).
+[Releases](https://github.com/Vecipp/Vecipp-IA-Releases/releases/latest)).
 
 ## Primeros pasos
 
@@ -113,7 +113,7 @@ paso. Los artefactos y las sesiones sincronizadas se guardan en tu cuenta, y pue
 
 ## Versiones y ayuda
 
-- **Novedades**: [CHANGELOG.md](CHANGELOG.md) y [Releases](https://github.com/DangerDutyJS/Vecipp-IA-Releases/releases).
+- **Novedades**: [CHANGELOG.md](CHANGELOG.md) y [Releases](https://github.com/Vecipp/Vecipp-IA-Releases/releases).
 - **Documentación**: [ia.vecipp.com/docs](https://ia.vecipp.com/docs).
 - **Soporte**: [soporte.vecipp.com](https://soporte.vecipp.com).
 
@@ -125,7 +125,7 @@ paso. Los artefactos y las sesiones sincronizadas se guardan en tu cuenta, y pue
 **Vecipp** es un ecosistema tecnológico latinoamericano que reúne en una sola cuenta la gestión de los negocios, la vida
 del barrio y la inteligencia artificial. Nació en un pueblo de Colombia con un sueño más grande que el lugar donde
 empezó: demostrar que desde Latinoamérica se crea tecnología de clase mundial, y llegar a millones de personas
-haciéndoles la vida más fácil. [Nuestra historia, misión y visión](https://github.com/DangerDutyJS/Vecipp-Negocio#nuestra-historia).
+haciéndoles la vida más fácil. [Nuestra historia, misión y visión](https://github.com/Vecipp/Vecipp-Negocio#nuestra-historia).
 
 | Documento | Para qué |
 |---|---|
