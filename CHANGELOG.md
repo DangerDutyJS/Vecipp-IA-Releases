@@ -6,6 +6,7 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 ## CLI
 
 ### CLI 1.0.8 — 2026-10-12
+- **Instala y actualiza Vecipp for Chrome por ti** (gratis, sin la tienda): `/chrome` deja la extensión en una carpeta de Vecipp que cargas una vez; cuando sale una versión nueva, el panel muestra «Update now» y con un clic queda al día (ya no tienes que bajar el .zip ni buscar nada).
 - **Tu navegador, como una persona** (con Vecipp for Chrome 1.0.3): clics y teclado de verdad, arrastrar, pasar el ratón, subir archivos, JavaScript y toda la consola y la red; mientras trabaja ves en Chrome su puntero, un panel con lo que hace y lo que piensa, y el grupo de pestañas pasa de «◐ Vecipp» a «✓ Vecipp».
 - **El agente ve**: cuando lee una imagen o toma una captura del navegador, la mira de verdad (en los modelos que ven imágenes; los demás reciben un aviso).
 - **Ve tu máquina**: qué programas corren, cuánta memoria usan, qué programa ocupa un puerto o si está libre, y puede detener uno (siempre te pregunta, y nunca toca el sistema).
