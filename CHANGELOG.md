@@ -5,6 +5,13 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.7 — 2026-10-12
+- **Pantallas nuevas**: `/model`, `/provider`, `/effort`, `/appearance`, la paleta, las sesiones y el rol del agente se ven en un mismo marco ordenado, con el detalle de cada opción.
+- **`/chrome` te guía**: una lista en vivo de lo que falta (conector registrado, extensión instalada y conectada, sesión iniciada) con el paso exacto para cada cosa; `o` abre la página de descarga, `l` inicia sesión, `r` reintenta.
+- **¿Lo enviaste sin querer?** `ctrl+c` antes de que llegue la respuesta lo cancela y te deja el mensaje en el cuadro para corregirlo; el agente no hace nada.
+- **Copiar y pegar como en cualquier programa**: `ctrl+c` copia lo que seleccionaste con el ratón, `ctrl+v` pega (también `ctrl+shift+v` y clic derecho). Para salir con `ctrl+c` hay que pulsarlo dos veces.
+- **`/model` ya no gasta nada al abrirse**: antes probaba 10 modelos con llamadas reales (en proveedores de pago eso costaba créditos). Ahora solo se comprueba el que eliges, y solo en proveedores gratis.
+
 ### CLI 1.0.6 — 2026-10-12
 - **La línea de trabajo dice la verdad**: qué está haciendo de verdad (`Reading app.js`, `Running npm test`, `Thinking`, `Calling Chrome · clicking…`, `Waiting for kimi-k3`), el tiempo y los tokens reales. Se pone **amarilla** si el modelo deja de responder unos segundos y **roja** si se trabó.
 - **`/effort low | medium | high`**: cuánto razonan los modelos que piensan antes de responder (se ve en la barra y en la línea de trabajo).
