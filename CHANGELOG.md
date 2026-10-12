@@ -5,6 +5,37 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.8 — 2026-10-12
+- **Tu navegador, como una persona** (con Vecipp for Chrome 1.0.3): clics y teclado de verdad, arrastrar, pasar el ratón, subir archivos, JavaScript y toda la consola y la red; mientras trabaja ves en Chrome su puntero, un panel con lo que hace y lo que piensa, y el grupo de pestañas pasa de «◐ Vecipp» a «✓ Vecipp».
+- **El agente ve**: cuando lee una imagen o toma una captura del navegador, la mira de verdad (en los modelos que ven imágenes; los demás reciben un aviso).
+- **Ve tu máquina**: qué programas corren, cuánta memoria usan, qué programa ocupa un puerto o si está libre, y puede detener uno (siempre te pregunta, y nunca toca el sistema).
+- **Te avisa lo que pasa de fondo**: si un servidor que dejó corriendo se cae o una tarea termina, lo ves en la conversación y el agente se entera. `/tasks` lista lo que corre y lo detiene.
+- **Un diseño más serio**: colores neutros, casi sin verde, sin negritas; un encabezado pequeño a la izquierda con el logo entero, el modelo, tu cuenta y **la carpeta donde estás trabajando**, que ya no cambia de tamaño al escribir.
+- **Cada comando dice qué hace**: «Run the tests», y debajo el comando; mientras corre ves cuánto lleva y cuántas líneas ha escrito.
+- **`ctrl+b` manda a segundo plano** un comando que tarda; y si llega a su tiempo límite ya no se pierde: sigue corriendo de fondo y el agente lo consulta.
+- **Comandos que solo miran** (`ls`, `git status`, `cat`…) ya no piden permiso, y el modo plan puede usarlos para investigar.
+- **Sugerencia del siguiente mensaje**: al terminar una respuesta aparece en gris lo que probablemente quieres pedir; `tab` lo toma (`/suggestions off` la apaga).
+- **Tus prompts por proyecto**: ↑ recorre los de esta carpeta, y si borraste lo que escribías con `ctrl+c`, ↑ te lo devuelve.
+- **Recap solo cuando sirve**: al volver tras unos minutos fuera, en sesiones de 3 o más turnos.
+- **Agentes a la vista**: mientras trabajan, un árbol con lo que hace cada uno; abajo una fila por agente con su tiempo y sus tokens; al terminar, «Agent "Security" finished · 2m 49s».
+- **Tus prompts a mano**: ↑ recorre los que ya enviaste (también en sesiones anteriores de esa carpeta) y ↓ te devuelve lo que estabas escribiendo.
+- **El trabajo en una frase**, en vivo: «Read 3 files, made 1 edit +43, running npm test»; un clic la despliega.
+- **Rutas clicables**: un clic en un archivo que menciona el agente lo abre en VS Code en esa línea.
+- La pestaña de la terminal dice **Vecipp CLI** y el tema de la sesión, con un círculo que gira mientras trabaja. `?` muestra los atajos.
+- **Cuatro modos con shift+tab**: normal, **✎ edits** (acepta solo las ediciones de archivos), **# root** (todo) y **◷ plan**: el agente solo lee e investiga, te presenta un plan y tú decides si lo ejecuta (aceptando ediciones o preguntando en cada cambio) o si sigue planeando.
+- **Preguntas y permisos en tarjetas claras**: opciones numeradas con lo que significa cada una, el cambio que se va a hacer a la vista y, en las preguntas, la opción de escribir tu propia respuesta.
+- **Al subir en la conversación** tu último mensaje queda fijo arriba y «Jump to bottom (ctrl+End)» te devuelve abajo.
+- Debajo de la barra ves, cuando los hay, los **artefactos** creados, los **agentes** trabajando y las **shells** abiertas.
+- **Ves al agente trabajar**: cada paso en una línea de tiempo; el que está corriendo se abre solo y muestra en vivo lo que hace (la salida del comando, el código que va escribiendo en verde y lo que quita en rojo) y se cierra al terminar. Un clic en cualquier paso lo vuelve a abrir.
+- **Al terminar** dice cuánto tardó y cuántos pasos hizo (`✓ done in 13s · 7 steps`), y deja en la conversación `◆ Worked for 13s · 7 steps · ↓ 320 tokens · done 11:05`. La línea de trabajo queda fija abajo, con los tokens que van ↑ y vuelven ↓.
+- **Abre al instante**: de unos 2 segundos a medio segundo.
+- **Transparencia con desenfoque** y el tamaño de letra de tu terminal tal cual (Vecipp no lo cambia; `/appearance` lo ofrece si lo quieres).
+- **Abajo, todo a la vista y ordenado**: modelo, proveedor, contexto, tokens y hora en la línea del prompt; el estado y un consejo en la barra.
+- **El trabajo del agente, ordenado**: lo que hace entre dos respuestas se agrupa en un bloque (`Running · 8s · 6 tools` mientras trabaja, `Ran 6 tools · 1 failed` al terminar) con ✓ y ✗ por herramienta. Un clic lo despliega o lo pliega, y un clic en una línea muestra lo que hizo o lo que pensó.
+- **Los pasos en una línea**: `Step 1/3 · …` en vez de la lista entera; `ctrl+t` la muestra completa.
+- **Barra de estado nueva**, por segmentos y al estilo de Kali: estado y modo a la izquierda, modelo, contexto, tokens y hora a la derecha, sin colores de fondo.
+- **`/appearance` con barras**: mueve la transparencia, el desenfoque y el **tamaño de letra** (para que quepa más en pantalla) con ← → y míralo cambiar en vivo; `enter` lo guarda y `esc` lo deja como estaba.
+
 ### CLI 1.0.7 — 2026-10-12
 - **Pantallas nuevas**: `/model`, `/provider`, `/effort`, `/appearance`, la paleta, las sesiones y el rol del agente se ven en un mismo marco ordenado, con el detalle de cada opción.
 - **`/chrome` te guía**: una lista en vivo de lo que falta (conector registrado, extensión instalada y conectada, sesión iniciada) con el paso exacto para cada cosa; `o` abre la página de descarga, `l` inicia sesión, `r` reintenta.
