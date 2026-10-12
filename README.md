@@ -91,6 +91,9 @@ Opciones al abrir: `vecipp -C <carpeta>`, `vecipp --no-vps`, `vecipp --version`.
 
 ## Qué puede hacer
 
+- **Una terminal con estilo propio**: pantalla completa inspirada en Kali Linux, prompt `┌──(vecipp㉿proyecto)` fijo
+  abajo, terminal translúcida (`/appearance`), ratón para desplazarte, copiar y abrir cambios y enlaces, y modo root con
+  `shift+tab`. Le puedes escribir mientras trabaja sin interrumpirlo.
 - **Trabajar en tu código**: leer, buscar, editar y crear archivos; mostrarte cada cambio antes de aplicarlo.
 - **Correr cosas de verdad**: comandos, varias shells a la vez, procesos en segundo plano, pruebas y compilaciones.
 - **Tus servidores**: conectarse por SSH a tu VPS y trabajar ahí con las mismas herramientas.
