@@ -5,6 +5,15 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.13 — 2026-10-13
+- **`vecipp doctor`**: comprueba que todo está listo (Node, tu cuenta/proveedor, git/python/adb, GitHub, VPS…) y te dice qué falta. Ideal para preparar el equipo o un CI.
+- **Autocompletado del shell**: `vecipp completion bash` (o zsh/fish/powershell) imprime el script para completar los comandos con Tab.
+- **Tope de trabajo en scripts**: `vecipp -p "tarea" --max-turns 30` para que en CI no se pase de cierto número de pasos.
+- **Vecipp en tu CI (GitHub Action)**: una acción lista para revisar PRs o arreglar builds con el agente (ver `apps/cli/ci/`).
+- **Crea documentos de Office**: el agente genera **Word (.docx)** y **Excel (.xlsx)** de verdad (informes, tablas), sin instalar nada.
+- **Edita notebooks de Jupyter** (.ipynb): agregar, cambiar o borrar celdas.
+- **`/cost` ahora muestra el costo en dinero**: cuánto costó la sesión por modelo (estimado) — lo que usas con tu propia clave sale como gratis, y los modelos que paga Vecipp muestran su costo.
+
 ### CLI 1.0.12 — 2026-10-13
 - **Errores de tipos al instante** (`diagnostics`): corre el chequeo del proyecto (TypeScript, Go, Rust, Python) y te lista los errores con `archivo:línea:columna` — para cazar lo que se rompió tras editar, con precisión.
 - **Ir a definición y referencias** (`symbol`): dale el nombre de una función/clase y te dice dónde está definida y cuántas veces y en qué archivos se usa — como un IDE, sin abrir nada.
@@ -138,6 +147,13 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 - Los artefactos que creas suben solos a ia.vecipp.com › Artefactos.
 
 ## Escritorio
+
+### Escritorio 1.0.8 — 2026-10-13
+- **Crea documentos de Office**: Word (.docx) y Excel (.xlsx) de verdad (informes, tablas), sin instalar nada; y **edita notebooks** de Jupyter.
+- **Errores de tipos e ir a definición** (`diagnostics`, `symbol`): caza lo que rompiste con precisión y encuentra dónde se define/usa una función.
+- **Desarrollo por especificación** (`/spec`): requisitos → diseño → tareas con tu aprobación.
+- **Control total del móvil** por ADB (leer/tocar cualquier app, listar/abrir/cerrar/desinstalar).
+- **`/cost` muestra el costo en dinero** de la sesión (estimado); lo tuyo con clave propia sale como gratis.
 
 ### Escritorio 1.0.7 — 2026-10-13
 - **Errores de tipos al instante** (`diagnostics`): corre el chequeo del proyecto (TypeScript, Go, Rust, Python) y lista los errores con archivo:línea:columna.
