@@ -5,6 +5,18 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.10 — 2026-10-13
+- **Control total de tu PC** (nuevas herramientas): el agente ahora puede...
+  - **Ver la salud del equipo** de un vistazo: SO, CPU y carga, RAM, cada disco (libre/usado) y los programas más pesados.
+  - **Liberar espacio de forma segura**: te muestra qué se puede borrar con su tamaño (cachés, temporales, papelera) y **solo borra lo que apruebes** — nunca tus documentos.
+  - **Manejar tus aplicaciones**: listar, buscar, **instalar**, **desinstalar**, **actualizar** y abrir apps (con winget), pidiéndote permiso para lo que cambia el sistema.
+  - **Servicios y arranque**: ver servicios y lo que arranca con Windows, y arrancar/parar/reiniciar un servicio.
+  - **Diagnosticar fallos**: revisa el registro del sistema por errores recientes, **apagados inesperados** y dispositivos con problema.
+  - **Red**: ping, resolver un dominio a IP, ver si un puerto está abierto y tus adaptadores de red.
+  - **Chequeo completo del PC** en una sola orden (como un «doctor»): salud + diagnóstico + cuánto puedes liberar.
+  - **Controlar cualquier app por accesibilidad**: encuentra los botones **por su nombre** y los pulsa/escribe/lee, apuntando a la ventana correcta (más preciso y seguro que mover el ratón a ciegas).
+- **Trabaja aún más como Claude**: reproduce el fallo antes de arreglarlo y, cuando edita para arreglar algo que fallaba, vuelve a correrlo para confirmar que quedó bien.
+
 ### CLI 1.0.9 — 2026-10-13
 - **Controla cualquier app de tu computador** (`computer`): el agente ve la pantalla y usa el mouse y el teclado como una persona —abrir programas, hacer clic, escribir, atajos— en cualquier aplicación del escritorio o del sistema, no solo el navegador. (Siempre te pide permiso: maneja toda la máquina.)
 - **Controla tu Android** (`adb`): con un teléfono o emulador conectado, el agente lista dispositivos, ve el estado, corre comandos, saca logcat, toma capturas, toca y escribe en la pantalla, instala apps y mueve archivos.
@@ -111,6 +123,11 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 - Los artefactos que creas suben solos a ia.vecipp.com › Artefactos.
 
 ## Escritorio
+
+### Escritorio 1.0.5 — 2026-10-13
+- **Control total de tu PC**: ver la salud del equipo (CPU/RAM/discos/procesos), **liberar espacio de forma segura** (muestra qué y borra solo lo que apruebes), **manejar aplicaciones** (instalar/desinstalar/actualizar/abrir), servicios y arranque, **diagnosticar fallos** (errores, apagados inesperados, dispositivos con problema), red (ping/dns/puertos) y un **chequeo completo** en una orden.
+- **Controlar cualquier app por accesibilidad**: encuentra los botones por su nombre y los pulsa/escribe/lee, apuntando a la ventana correcta.
+- **Trabaja aún más como Claude**: reproduce el fallo antes de arreglarlo y vuelve a correrlo para confirmar.
 
 ### Escritorio 1.0.4 — 2026-10-13
 - **Controla cualquier app de tu computador**: el agente ve la pantalla y usa mouse y teclado como una persona en cualquier programa del escritorio o del sistema (siempre te pide permiso).
