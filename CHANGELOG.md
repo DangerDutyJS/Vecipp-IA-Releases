@@ -6,6 +6,17 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 ## CLI
 
 ### CLI 1.0.8 — 2026-10-12
+- **Observabilidad**: el agente puede medir si un servicio web está arriba y su latencia (`http_probe`) y analizar logs para ver la tasa de errores y los errores más repetidos agrupados.
+- **Inspectores del VPS**: el agente revisa servicios, red y firewall, certificados TLS (y su caducidad), tareas cron, logs y uso de disco del servidor, cada uno con una orden.
+- **Trabaja a full en tu VPS**: además de ejecutar comandos, el agente lee, edita y escribe archivos del servidor directamente, y te da un diagnóstico completo del VPS (SO, disco, memoria, servicios caídos, puertos, errores, pm2/docker) con una sola orden.
+- **Modo sin interfaz (`vecipp -p`)**: corre una tarea y te da la respuesta sin abrir la interfaz —ideal para scripts y automatización—; con `--json` da un resultado estructurado.
+- **Cobertura de pruebas**: el agente puede medir qué parte del código cubren las pruebas y qué archivos quedan sin probar.
+- **Deshacer cambios (`/rewind`)**: si el agente tocó archivos y quieres volver atrás, `/rewind` lista los puntos y `/rewind <turno>` restaura los archivos a como estaban antes de ese turno.
+- **Depurador de verdad (Node)**: el agente puede poner breakpoints y ver las variables y la pila en el punto exacto del fallo (o cuando algo lanza una excepción), en vez de adivinar o llenar de prints.
+- **Skills**: guarda instrucciones para una tarea (pasos de despliegue, checklist de revisión…) en `.vecipp/skills/` y el agente las carga cuando encajan; `/skills` las lista.
+- **Conecta herramientas de terceros (MCP)**: configura servidores MCP en `.vecipp/mcp.json` y el agente usa sus herramientas como propias; `/mcp` las lista. Abre cientos de integraciones.
+- **Metas, repetir y agendar tareas**: `/goal` fija un objetivo que el agente recuerda cada turno; `/loop` repite una tarea hasta terminarla o pararla; `/schedule` programa tareas («en 30m…», «cada 1h…») que corren cuando el agente está libre.
+- **Conecta GitHub** (como Claude): con `/github` enlazas tu cuenta mediante la CLI `gh`, y el agente puede crear/clonar repos, abrir pull requests e issues y usar la API de GitHub. (Borrar un repo o forzar un push te lo confirma antes.)
 - **Instala y actualiza Vecipp for Chrome por ti** (gratis, sin la tienda): `/chrome` deja la extensión en una carpeta de Vecipp que cargas una vez; cuando sale una versión nueva, el panel muestra «Update now» y con un clic queda al día (ya no tienes que bajar el .zip ni buscar nada).
 - **Tu navegador, como una persona** (con Vecipp for Chrome 1.0.3): clics y teclado de verdad, arrastrar, pasar el ratón, subir archivos, JavaScript y toda la consola y la red; mientras trabaja ves en Chrome su puntero, un panel con lo que hace y lo que piensa, y el grupo de pestañas pasa de «◐ Vecipp» a «✓ Vecipp».
 - **El agente ve**: cuando lee una imagen o toma una captura del navegador, la mira de verdad (en los modelos que ven imágenes; los demás reciben un aviso).
