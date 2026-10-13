@@ -112,7 +112,11 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## Escritorio
 
-### Escritorio Próxima versión
+### Escritorio 1.0.4 — 2026-10-13
+- **Controla cualquier app de tu computador**: el agente ve la pantalla y usa mouse y teclado como una persona en cualquier programa del escritorio o del sistema (siempre te pide permiso).
+- **Controla tu Android**: con un teléfono o emulador conectado, lista dispositivos, corre comandos, saca logcat, toma capturas, toca/escribe en la pantalla, instala apps y mueve archivos.
+- **Escáner de seguridad**: revisa tu proyecto por secretos filtrados (claves, tokens, contraseñas —sin mostrar el secreto completo) y por dependencias vulnerables.
+- **Trabaja más como Claude**: conoce su entorno y elige la herramienta correcta, y reproduce el fallo antes de arreglarlo (lo corre y lo ve fallar) en vez de adivinar.
 - **Freno de seguridad**: aunque tengas la aprobación automática, el agente pregunta siempre antes de un comando destructivo (borrar carpetas, `git reset --hard`, `git push --force`…) o de escribir fuera de la carpeta del proyecto.
 - El agente ahora **lee PDF y notebooks** de Jupyter, **busca en la web**, lee una página respondiendo solo lo que pregunta, usa **PowerShell** además de Bash, **espera** a que un servidor esté listo sin consultar en bucle y busca en el código con más precisión (por tipo de archivo, con líneas de contexto, solo nombres o conteos).
 - **Subagente general**: puede editar y correr comandos, pidiéndote permiso igual que el agente principal.
