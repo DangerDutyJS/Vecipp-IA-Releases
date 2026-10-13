@@ -5,6 +5,13 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.14 — 2026-10-13
+- **Compartir una sesión** (`/share`, alias `/export`): guarda toda la conversación en un archivo Markdown (`vecipp-session-….md`) en tu carpeta, listo para enviar o pegar donde quieras. Si tienes `/sync` activo, te recuerda que también está en ia.vecipp.com/code para compartir por enlace.
+- **No se llena el contexto sin avisar** (auto-compact, como Claude): cuando la conversación llega al ~85% de la ventana del modelo, el agente la resume **solo** y sigue trabajando, avisándote. Todo queda guardado (`/resume` para el historial completo). Puedes apagarlo con `VECIPP_NO_AUTOCOMPACT=1`.
+- **Usa tus skills por su cuenta**: ahora el agente **ve la lista de tus skills** (de `.vecipp/skills/`) y carga la que encaja con la tarea sin que se lo pidas —antes solo las usaba si iba a buscarlas a propósito.
+- **Tablero en vivo del workflow**: cuando lanzas una tarea grande con varios subagentes (`workflow`), ves el tablero actualizarse en vivo —qué subtareas corren en paralelo, cuáles están hechas, bloqueadas o fallando— en vez de esperar en silencio.
+- **Borrar una sesión** (`/delete <id>`): elimina una sesión guardada de tu computador y de tu cuenta. Pide confirmación: `/delete <id>` te dice qué borraría y `/delete <id> yes` lo hace. Los ids salen en `/history`.
+
 ### CLI 1.0.13 — 2026-10-13
 - **`vecipp doctor`**: comprueba que todo está listo (Node, tu cuenta/proveedor, git/python/adb, GitHub, VPS…) y te dice qué falta. Ideal para preparar el equipo o un CI.
 - **Autocompletado del shell**: `vecipp completion bash` (o zsh/fish/powershell) imprime el script para completar los comandos con Tab.
