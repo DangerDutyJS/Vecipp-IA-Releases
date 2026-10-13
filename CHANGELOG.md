@@ -5,6 +5,16 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.11 — 2026-10-13
+- **Contexto siempre a la vista** (como Claude): en la barra de estado ves `ctx N%` **todo el tiempo** —cuánto de la ventana de contexto llevas usado— y cambia a color de aviso cuando se llena (y te sugiere `/compact`). Y con **`/context`** abres el panel detallado: una barra con cuánto usa el prompt del sistema, las herramientas y la conversación, y lo que queda libre. La ventana es **por modelo** (Claude ~200k, GPT ~128k, Gemini ~1M). Para **evitar consumo excesivo**.
+- **No se rinde** (como Claude): el agente **sondea tu entorno** (`env_probe`: ¿admin?, ¿pantalla?, qué shells/gestores/herramientas hay) para elegir una estrategia que funcione; cuando algo falla, **clasifica el error y prueba otra vía** (2-3 alternativas, sin repetir en bucle); y si de verdad se bloquea (contraseña, UAC, algo físico) te pide un `!comando` exacto y sigue.
+- **Recuerda lo que funciona en tu PC** (`remember`): guarda aprendizajes de este equipo («aquí no está inxi, usa systeminfo») y los tiene en cuenta en sesiones futuras para no re-probar lo que falla.
+- **Revisa tus cambios** (`review`): reúne el diff (sin commitear / vs una rama / un commit), marca cambios grandes y **escanea secretos**, y revisa el código.
+- **Mapa del repo** (`repo_map`): entiende un proyecto rápido — cada archivo con sus funciones/clases/exports — sin leerlo entero.
+- **`.vecippignore`**: lista archivos que el agente **no debe leer** (secretos, ruido) y las búsquedas los saltan — menos consumo y más privacidad.
+- **`format`**: formatea tu código con prettier/biome/ruff/gofmt/rustfmt (detecta el que tengas).
+- **Comandos nuevos**: **`/search`** (busca en tus sesiones guardadas), **`/handoff`** (nota para continuar en una sesión nueva sin perder el hilo), **`/simplify`** (simplifica tus cambios con seguridad), **`/undo`** (deshace cambios, alias de `/rewind`).
+
 ### CLI 1.0.10 — 2026-10-13
 - **Control total de tu PC** (nuevas herramientas): el agente ahora puede...
   - **Ver la salud del equipo** de un vistazo: SO, CPU y carga, RAM, cada disco (libre/usado) y los programas más pesados.
@@ -123,6 +133,12 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 - Los artefactos que creas suben solos a ia.vecipp.com › Artefactos.
 
 ## Escritorio
+
+### Escritorio 1.0.6 — 2026-10-13
+- **Contexto siempre a la vista** (como Claude): ves `ctx N%` todo el tiempo —cuánto de la ventana de contexto llevas— y con `/context` abres el panel detallado (system prompt / herramientas / conversación / libre). La ventana es por modelo. Para evitar consumo excesivo.
+- **No se rinde**: sondea tu entorno (`env_probe`), prueba 2-3 alternativas cuando algo falla (sin bucles) y, si se bloquea de verdad, te pide un `!comando` exacto. Y **recuerda lo que funciona en tu PC** (`remember`).
+- **Calidad**: `review` (revisa cambios + secretos), `format` (prettier/biome/ruff/gofmt/rustfmt), `repo_map` (mapa del proyecto), y los comandos `/simplify`, `/search`, `/handoff`, `/undo`.
+- **`.vecippignore`**: archivos que el agente no debe leer (secretos, ruido).
 
 ### Escritorio 1.0.5 — 2026-10-13
 - **Control total de tu PC**: ver la salud del equipo (CPU/RAM/discos/procesos), **liberar espacio de forma segura** (muestra qué y borra solo lo que apruebes), **manejar aplicaciones** (instalar/desinstalar/actualizar/abrir), servicios y arranque, **diagnosticar fallos** (errores, apagados inesperados, dispositivos con problema), red (ping/dns/puertos) y un **chequeo completo** en una orden.
