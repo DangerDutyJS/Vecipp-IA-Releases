@@ -5,6 +5,12 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.9 — 2026-10-13
+- **Controla cualquier app de tu computador** (`computer`): el agente ve la pantalla y usa el mouse y el teclado como una persona —abrir programas, hacer clic, escribir, atajos— en cualquier aplicación del escritorio o del sistema, no solo el navegador. (Siempre te pide permiso: maneja toda la máquina.)
+- **Controla tu Android** (`adb`): con un teléfono o emulador conectado, el agente lista dispositivos, ve el estado, corre comandos, saca logcat, toma capturas, toca y escribe en la pantalla, instala apps y mueve archivos.
+- **Escáner de seguridad** (`security_scan`): revisa tu proyecto por **secretos filtrados** (claves de API, tokens, contraseñas —sin instalar nada, y nunca muestra el secreto completo) y por **dependencias vulnerables** (`npm audit`), ordenado por gravedad.
+- **Trabaja más como Claude**: el agente ahora **conoce su entorno** y elige la herramienta correcta (en Windows usa PowerShell o Git Bash según toque; para el VPS usa sus herramientas, no SSH a mano), y **reproduce el fallo antes de arreglarlo** (corre el test y lo ve fallar) en vez de adivinar. Probado midiendo su comportamiento contra Claude con el mismo modelo.
+
 ### CLI 1.0.8 — 2026-10-12
 - **Observabilidad**: el agente puede medir si un servicio web está arriba y su latencia (`http_probe`) y analizar logs para ver la tasa de errores y los errores más repetidos agrupados.
 - **Inspectores del VPS**: el agente revisa servicios, red y firewall, certificados TLS (y su caducidad), tareas cron, logs y uso de disco del servidor, cada uno con una orden.
