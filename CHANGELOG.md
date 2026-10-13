@@ -155,6 +155,11 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## Escritorio
 
+### Escritorio 1.0.9 — 2026-10-13
+- **No se llena el contexto sin avisar** (auto-compact, como Claude): cuando la conversación llega al ~85% de la ventana del modelo, el agente la resume **solo** y sigue, avisándote. Todo queda guardado. Se apaga con `VECIPP_NO_AUTOCOMPACT=1`.
+- **Usa tus skills por su cuenta**: el agente ahora **ve la lista de tus skills** (de `.vecipp/skills/`) y carga la que encaja con la tarea sin que se lo pidas.
+- **Más seguro**: el freno contra comandos destructivos ahora también caza las formas largas (`rm --recursive`, `rm --force`) y `find … -delete`, así que en modo automático nunca borran sin preguntar.
+
 ### Escritorio 1.0.8 — 2026-10-13
 - **Crea documentos de Office**: Word (.docx) y Excel (.xlsx) de verdad (informes, tablas), sin instalar nada; y **edita notebooks** de Jupyter.
 - **Errores de tipos e ir a definición** (`diagnostics`, `symbol`): caza lo que rompiste con precisión y encuentra dónde se define/usa una función.
