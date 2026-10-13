@@ -5,6 +5,11 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.12 — 2026-10-13
+- **Errores de tipos al instante** (`diagnostics`): corre el chequeo del proyecto (TypeScript, Go, Rust, Python) y te lista los errores con `archivo:línea:columna` — para cazar lo que se rompió tras editar, con precisión.
+- **Ir a definición y referencias** (`symbol`): dale el nombre de una función/clase y te dice dónde está definida y cuántas veces y en qué archivos se usa — como un IDE, sin abrir nada.
+- **Desarrollo por especificación** (`/spec <qué construir>`): el agente arma **requisitos → diseño → tareas**, pidiéndote aprobación entre cada fase, y luego implementa paso a paso. Para funciones grandes bien planeadas.
+
 ### CLI 1.0.11 — 2026-10-13
 - **Contexto siempre a la vista** (como Claude): en la barra de estado ves `ctx N%` **todo el tiempo** —cuánto de la ventana de contexto llevas usado— y cambia a color de aviso cuando se llena (y te sugiere `/compact`). Y con **`/context`** abres el panel detallado: una barra con cuánto usa el prompt del sistema, las herramientas y la conversación, y lo que queda libre. La ventana es **por modelo** (Claude ~200k, GPT ~128k, Gemini ~1M). Para **evitar consumo excesivo**.
 - **No se rinde** (como Claude): el agente **sondea tu entorno** (`env_probe`: ¿admin?, ¿pantalla?, qué shells/gestores/herramientas hay) para elegir una estrategia que funcione; cuando algo falla, **clasifica el error y prueba otra vía** (2-3 alternativas, sin repetir en bucle); y si de verdad se bloquea (contraseña, UAC, algo físico) te pide un `!comando` exacto y sigue.
@@ -133,6 +138,12 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 - Los artefactos que creas suben solos a ia.vecipp.com › Artefactos.
 
 ## Escritorio
+
+### Escritorio 1.0.7 — 2026-10-13
+- **Errores de tipos al instante** (`diagnostics`): corre el chequeo del proyecto (TypeScript, Go, Rust, Python) y lista los errores con archivo:línea:columna.
+- **Ir a definición y referencias** (`symbol`): dónde está definida una función/clase y dónde se usa, sin abrir archivos.
+- **Desarrollo por especificación** (`/spec`): requisitos → diseño → tareas con tu aprobación entre fases, y luego implementa.
+- **Control total del móvil** por ADB: leer la pantalla de cualquier app (incluido Telegram), listar/abrir/cerrar/desinstalar apps, Home/Atrás/Recientes, tocar y escribir.
 
 ### Escritorio 1.0.6 — 2026-10-13
 - **Contexto siempre a la vista** (como Claude): ves `ctx N%` todo el tiempo —cuánto de la ventana de contexto llevas— y con `/context` abres el panel detallado (system prompt / herramientas / conversación / libre). La ventana es por modelo. Para evitar consumo excesivo.
