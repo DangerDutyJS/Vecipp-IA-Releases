@@ -165,6 +165,10 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## Escritorio
 
+### Escritorio 1.0.10 — 2026-10-14
+- **No te deja tirado si un modelo falla**: si el modelo que usas se cae, se cuelga o devuelve vacío a mitad de una tarea, Vecipp **salta solo a otro de tus modelos** y te avisa; si de verdad no queda ninguno, te lo dice en vez de quedarse mudo.
+- **Nunca más "pegado esperando"**: si un proveedor abre la conexión pero no responde, Vecipp corta a los ~120 segundos con un mensaje claro en vez de colgarse (los modelos que piensan mucho no se ven afectados).
+
 ### Escritorio 1.0.9 — 2026-10-13
 - **No se llena el contexto sin avisar** (auto-compact, como Claude): cuando la conversación llega al ~85% de la ventana del modelo, el agente la resume **solo** y sigue, avisándote. Todo queda guardado. Se apaga con `VECIPP_NO_AUTOCOMPACT=1`.
 - **Usa tus skills por su cuenta**: el agente ahora **ve la lista de tus skills** (de `.vecipp/skills/`) y carga la que encaja con la tarea sin que se lo pidas.
