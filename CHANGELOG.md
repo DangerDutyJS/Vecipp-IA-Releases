@@ -5,8 +5,14 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.16 — 2026-10-13
+- **Listas de modelos claras y separadas**: en **`/model`** salen **solo tus proveedores** (los que agregaste con tu API key, p. ej. NVIDIA o Hostinger, con todos sus modelos) y los oficiales de Vecipp. Como Vecipp **todavía no tiene modelos oficiales**, esa parte sale **vacía** (ya no aparecen modelos "Vecipp IA" que nunca aplicaste).
+- **`/lab` muestra solo los cerebros del laboratorio** (Claude, Codex, Copilot, Antigravity, Qoder), agrupados por cerebro — **ya no mezcla tus proveedores** (NVIDIA/Hostinger). Esos van en `/model`. (Antes, por un error, `/lab` abría la lista de tus proveedores.)
+- **Nombres de modelo legibles**: la lista muestra **"Kimi K3 (NVIDIA)"** en vez de "moonshotai/kimi-k3". El paréntesis es siempre **quién lo sirve** (tu proveedor), así sabes con cuál lo estás usando; si el mismo modelo lo sirven dos proveedores, salen las dos opciones.
+- **Arreglado un duplicado**: un modelo ya no aparece dos veces en `/model` (pasaba cuando el que usabas estaba guardado con nombre corto y en la lista estaba con el nombre largo del proveedor).
+
 ### CLI 1.0.15 — 2026-10-13
-- **`/model` más claro**: los modelos salen **agrupados por el proveedor que los sirve** (NVIDIA, Vecipp, OpenRouter…), con el que usas ahora de primero, cada uno como "modelo (Proveedor)", y los de Vecipp marcados como oficiales. Ves de dónde viene cada modelo y ya no es una lista desordenada.
+- **`/model` más claro**: los modelos salen **agrupados por el proveedor que los sirve** (NVIDIA, OpenRouter…), con el que usas ahora de primero, cada uno como "modelo (Proveedor)". Ves de dónde viene cada modelo y ya no es una lista desordenada.
 - **Más comandos de sesión** (como Claude): **`/rename`** cambia el nombre de la sesión actual, **`/fork`** la bifurca en una sesión nueva para explorar sin tocar la original, **`/copy`** copia al portapapeles la última respuesta de Vecipp, **`/status`** muestra de un vistazo tu cuenta, modelo, sesión, tokens, carpeta y sincronización, y **`/doctor`** comprueba que todo está listo (Node, cuenta, herramientas, GitHub, VPS) sin salir del chat.
 - **`/btw`** (o `/side`): una pregunta rápida al margen — se responde con el contexto actual pero **no** se mete en la tarea, así no desvías lo que estás haciendo.
 - **`/rewind` ahora retrocede también la conversación**: además de restaurar los archivos de un turno, hace que el modelo "olvide" desde ahí (como Claude), no solo deshace archivos.
