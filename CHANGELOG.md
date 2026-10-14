@@ -5,6 +5,16 @@ Lo que trae cada versión de la CLI y del escritorio. Los instaladores están en
 
 ## CLI
 
+### CLI 1.0.15 — 2026-10-13
+- **`/model` más claro**: los modelos salen **agrupados por el proveedor que los sirve** (NVIDIA, Vecipp, OpenRouter…), con el que usas ahora de primero, cada uno como "modelo (Proveedor)", y los de Vecipp marcados como oficiales. Ves de dónde viene cada modelo y ya no es una lista desordenada.
+- **Más comandos de sesión** (como Claude): **`/rename`** cambia el nombre de la sesión actual, **`/fork`** la bifurca en una sesión nueva para explorar sin tocar la original, **`/copy`** copia al portapapeles la última respuesta de Vecipp, **`/status`** muestra de un vistazo tu cuenta, modelo, sesión, tokens, carpeta y sincronización, y **`/doctor`** comprueba que todo está listo (Node, cuenta, herramientas, GitHub, VPS) sin salir del chat.
+- **`/btw`** (o `/side`): una pregunta rápida al margen — se responde con el contexto actual pero **no** se mete en la tarea, así no desvías lo que estás haciendo.
+- **`/rewind` ahora retrocede también la conversación**: además de restaurar los archivos de un turno, hace que el modelo "olvide" desde ahí (como Claude), no solo deshace archivos.
+- **`/editor`**: redacta tu mensaje en tu editor favorito (`$EDITOR`) y al cerrar vuelve al prompt para enviarlo — cómodo para mensajes largos.
+- **`/feedback`**: mándale un error o idea al equipo de Vecipp sin salir del chat.
+- **No te deja tirado si un modelo falla**: si el modelo que usas se cae, se cuelga o devuelve vacío a mitad de una tarea, Vecipp **salta solo a otro de tus modelos** (otro modelo del mismo proveedor, u otro proveedor que tengas) y te avisa claro (*"Model X failed — trying Y…"*). Si de verdad no queda ninguno, te lo dice (prueba `/model` o agrega un proveedor) en vez de quedarse mudo.
+- **Nunca más "pegado esperando"**: si un proveedor abre la conexión pero no responde, Vecipp corta a los ~120 segundos con un mensaje claro en vez de quedarse colgado para siempre (los modelos que piensan mucho no se ven afectados: cuentan los "latidos" del proveedor).
+
 ### CLI 1.0.14 — 2026-10-13
 - **Compartir una sesión** (`/share`, alias `/export`): guarda toda la conversación en un archivo Markdown (`vecipp-session-….md`) en tu carpeta, listo para enviar o pegar donde quieras. Si tienes `/sync` activo, te recuerda que también está en ia.vecipp.com/code para compartir por enlace.
 - **No se llena el contexto sin avisar** (auto-compact, como Claude): cuando la conversación llega al ~85% de la ventana del modelo, el agente la resume **solo** y sigue trabajando, avisándote. Todo queda guardado (`/resume` para el historial completo). Puedes apagarlo con `VECIPP_NO_AUTOCOMPACT=1`.
